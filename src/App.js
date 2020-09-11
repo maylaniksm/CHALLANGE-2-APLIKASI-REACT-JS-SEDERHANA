@@ -89,8 +89,6 @@ class App extends Component {
             nominal: '',
             bunga: '',
             periode: '12',
-            hasilBunga: 'Bunga:',
-            hasilCicilan: 'Cicilan pokok:',
             hasilAngsuran: 'Angsuran per bulan:'
         };
         this.nominalChange = this.nominalChange.bind(this);
@@ -118,8 +116,6 @@ hitung = (event)  => {
         let angsurann = pokokk + bungaa;
 
         //output
-        this.setState({hasilBunga: "Bunga: Rp. " + bungaa})
-        this.setState({hasilCicilan: "Cicilan pokok: Rp. " + pokokk})
         this.setState({hasilAngsuran: "Angsuran per bulan: Rp. " + angsurann})
         event.preventDefault();
     }
